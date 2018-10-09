@@ -95,13 +95,13 @@ class QuestionAsker:
 
 sys.setrecursionlimit(2000)
 
-workbook = xlsxwriter.Workbook('data.xlsx')
+workbook = xlsxwriter.Workbook('data2.xlsx')
 worksheet = workbook.add_worksheet()
-timesToTest=300
+timesToTest=40
 x=[]
 y=[]
 
-for i in range(2,22):
+for i in range(5,23):
     trait_no=i
 
     results = []
@@ -109,7 +109,7 @@ for i in range(2,22):
     for j in range(timesToTest):
         print(i,"attempt:", j)
         test1 = Wrapper(trait_no, i)
-        questions = QuestionAsker(list(range(int(i/2))),[])
+        questions = QuestionAsker(list(range(5)),[])
         results.append(len(questions.askedQuestions))
         worksheet.write(i,j,len(questions.askedQuestions))
     y.append(np.mean(results))
