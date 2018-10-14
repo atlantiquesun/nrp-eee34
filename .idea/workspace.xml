@@ -16,10 +16,15 @@
       <file leaf-file-name="process.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/process.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="560">
-              <caret line="76" lean-forward="true" selection-start-line="76" selection-end-line="76" />
+            <state relative-caret-position="341">
+              <caret line="83" column="3" lean-forward="true" selection-start-line="83" selection-start-column="3" selection-end-line="83" selection-end-column="3" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
+                <marker date="1539492702008" expanded="true" signature="2572:2578" ph="..." />
+                <marker date="1539492702008" expanded="true" signature="2605:2611" ph="..." />
+                <marker date="1539492702008" expanded="true" signature="2651:2657" ph="..." />
+                <marker date="1539492702008" expanded="true" signature="2673:2679" ph="..." />
+                <marker date="1539492702008" expanded="true" signature="2689:2695" ph="..." />
               </folding>
             </state>
           </provider>
@@ -28,11 +33,20 @@
       <file leaf-file-name="sequential_question_v2.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/old stuff/sequential_question_v2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
+            <state relative-caret-position="175">
               <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="rewraew.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/old stuff/rewraew.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret selection-end-line="3" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -55,22 +69,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="greedy.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/greedy.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="10" selection-start-line="10" selection-end-line="10" />
-              <folding>
-                <element signature="e#0#11#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="arrayprint.py" pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/AppData/Roaming/Python/Python36/site-packages/numpy/core/arrayprint.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22355">
+            <state relative-caret-position="1414">
               <caret line="1315" selection-start-line="1315" selection-end-line="1315" />
             </state>
           </provider>
@@ -88,8 +90,11 @@
       <file leaf-file-name="test1 (2).py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/old stuff/test1 (2).py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="11" selection-start-line="4" selection-end-line="5" />
+            <state relative-caret-position="119">
+              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -124,13 +129,14 @@
         <option value="$PROJECT_DIR$/GUI.py" />
         <option value="$PROJECT_DIR$/old stuff/ttests.py" />
         <option value="$PROJECT_DIR$/data/greedy.py" />
+        <option value="$PROJECT_DIR$/old stuff/rewraew.py" />
         <option value="$PROJECT_DIR$/process.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1080" />
-    <option name="width" value="847" />
+    <option name="x" value="953" />
+    <option name="width" value="974" />
     <option name="height" value="1047" />
   </component>
   <component name="ProjectView">
@@ -178,7 +184,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.process">
+  <component name="RunManager" selected="Python.greedy">
     <configuration name="GUI" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="nrp-eee34" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -251,24 +257,6 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="test1 (2)" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="nrp-eee34" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="C:\Users\Conrad\AppData\Local\Programs\Python\Python36\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test1 (2).py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
     <configuration name="ttests" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="nrp-eee34" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -287,20 +275,34 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
+    <configuration name="Nosetests in rewraew.py" type="tests" factoryName="Nosetests" temporary="true" nameIsGenerated="true">
+      <module name="nrp-eee34" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/old stuff" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_regexPattern" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/old stuff/rewraew.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+    </configuration>
     <list>
-      <item itemvalue="Python.test1 (2)" />
       <item itemvalue="Python.GUI" />
       <item itemvalue="Python.ttests" />
       <item itemvalue="Python.greedy" />
       <item itemvalue="Python.process" />
+      <item itemvalue="Python tests.Nosetests in rewraew.py" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Nosetests in rewraew.py" />
         <item itemvalue="Python.process" />
         <item itemvalue="Python.greedy" />
         <item itemvalue="Python.ttests" />
         <item itemvalue="Python.GUI" />
-        <item itemvalue="Python.test1 (2)" />
       </list>
     </recent_temporary>
   </component>
@@ -317,15 +319,33 @@
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="Nosetests_in_rewraew_py - 2018.10.14 at 11h 59m 03s.xml">
+      <configuration name="Nosetests in rewraew.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Nosetests_in_rewraew_py - 2018.10.14 at 11h 59m 08s.xml">
+      <configuration name="Nosetests in rewraew.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Nosetests_in_rewraew_py - 2018.10.14 at 11h 59m 19s.xml">
+      <configuration name="Nosetests in rewraew.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Nosetests_in_rewraew_py - 2018.10.14 at 11h 59m 37s.xml">
+      <configuration name="Nosetests in rewraew.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Nosetests_in_rewraew_py - 2018.10.14 at 11h 59m 43s.xml">
+      <configuration name="Nosetests in rewraew.py" configurationId="tests" />
+    </history-entry>
+  </component>
   <component name="ToolWindowManager">
-    <frame x="1080" y="0" width="847" height="1047" extended-state="0" />
+    <frame x="953" y="0" width="974" height="1047" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.121540315" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.10542797" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3326226" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3326226" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -338,6 +358,25 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
     </layout>
+    <layout-to-restore>
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3326226" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.10542797" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Python Console" order="7" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3220697" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+    </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -414,12 +453,58 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/greedy.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Roaming/Python/Python36/site-packages/numpy/core/arrayprint.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22355">
+          <caret line="1315" selection-start-line="1315" selection-end-line="1315" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/old stuff/ttests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="11" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/old stuff/test1 (2).py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="11" selection-start-line="4" selection-end-line="5" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/process.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1037">
           <caret line="65" column="11" lean-forward="true" selection-start-line="65" selection-start-column="11" selection-end-line="65" selection-end-column="11" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
+            <marker date="1539492702008" expanded="true" signature="2572:2578" ph="..." />
+            <marker date="1539492702008" expanded="true" signature="2605:2611" ph="..." />
+            <marker date="1539492702008" expanded="true" signature="2651:2657" ph="..." />
+            <marker date="1539492702008" expanded="true" signature="2673:2679" ph="..." />
+            <marker date="1539492702008" expanded="true" signature="2689:2695" ph="..." />
           </folding>
         </state>
       </provider>
@@ -541,6 +626,11 @@
         <state>
           <folding>
             <element signature="e#0#11#0" expanded="true" />
+            <marker date="1539492702008" expanded="true" signature="2572:2578" ph="..." />
+            <marker date="1539492702008" expanded="true" signature="2605:2611" ph="..." />
+            <marker date="1539492702008" expanded="true" signature="2651:2657" ph="..." />
+            <marker date="1539492702008" expanded="true" signature="2673:2679" ph="..." />
+            <marker date="1539492702008" expanded="true" signature="2689:2695" ph="..." />
           </folding>
         </state>
       </provider>
@@ -630,20 +720,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/GUI.py" />
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Roaming/Python/Python36/site-packages/numpy/core/arrayprint.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22355">
-          <caret line="1315" selection-start-line="1315" selection-end-line="1315" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/old stuff/ttests.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -652,16 +728,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/parser.py" />
-    <entry file="file://$PROJECT_DIR$/old stuff/sequential_question_v2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/greedy.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -672,19 +738,58 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Roaming/Python/Python36/site-packages/numpy/core/arrayprint.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1414">
+          <caret line="1315" selection-start-line="1315" selection-end-line="1315" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/old stuff/rewraew.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="3" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/old stuff/sequential_question_v2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/old stuff/test1 (2).py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="11" selection-start-line="4" selection-end-line="5" />
+        <state relative-caret-position="119">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/process.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="560">
-          <caret line="76" lean-forward="true" selection-start-line="76" selection-end-line="76" />
+        <state relative-caret-position="341">
+          <caret line="83" column="3" lean-forward="true" selection-start-line="83" selection-start-column="3" selection-end-line="83" selection-end-column="3" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
+            <marker date="1539492702008" expanded="true" signature="2572:2578" ph="..." />
+            <marker date="1539492702008" expanded="true" signature="2605:2611" ph="..." />
+            <marker date="1539492702008" expanded="true" signature="2651:2657" ph="..." />
+            <marker date="1539492702008" expanded="true" signature="2673:2679" ph="..." />
+            <marker date="1539492702008" expanded="true" signature="2689:2695" ph="..." />
           </folding>
         </state>
       </provider>

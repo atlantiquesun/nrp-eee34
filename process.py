@@ -14,6 +14,9 @@ from PyQt5.QtCore import pyqtSlot
 #This function takes in a question written in Reverse Polish Notation and returns you the breeds for which you get a True/False answer!
 #A question could be written as [0,1,"NOT","AND"] which is 0 AND (NOT 1) in infix notation.
 #I hope this function is helpful to you if you're trying to do mass-tests!
+
+#Utility functions
+
 def check_answers(trait_breed,question):
     stack = []
     for i in range(len(question)):
@@ -51,7 +54,34 @@ def generate_breed_trait_matrix(trait_no,breed_no):
 
 tb_matrix=generate_breed_trait_matrix(2,4)
 
-class UlamRenyi(self):
+#Ulam-Renyi Class
+class UlamRenyi(object):
+    def __init__(self, breed_set,e):
+        self.breed_set=breed_set
+        self.e=e
+        self.game_state=[]
+        self.game_state_yes=[]
+        self.game_state_no=[]
+
+    def set_cardinality(self, list):
+        return [len(i) for i in list]
+
+    def process_yes(game_state):
+
+    def process_no(game_state):
+
+    def berkelamp_weight
+
+    def character:
+
+    def recursive_f:
+
+    def gamma:
+
+    def process
+
+
+"""
     def question(state_sigma):
         num_error=len(state_sigma)-1
         question=np.zeros(1,num_error+1)
@@ -61,10 +91,23 @@ class UlamRenyi(self):
             for i in range(0,num_error)
                 diff=np.zeros(1,state_sigma[i]+1)
                 state_i_sigma = np.concatenate(np.zeros(1, num_error-i),state_sigma[0:i])
-                for j = range(0,state_sigma[i])
-                    ques_i = np.zeros(1, num_error - i) question(1:max(0, i)) j];
+                for j in range(0,state_sigma[i])
+                    ques_i = np.concatenate(np.zeros(1, num_error-i), question[1:max(0, i)], j)
                     [state_i_yes, state_i_no] = StateAfterQues(state_i_sigma, ques_i);
                     diff(j + 1) = abs(Weight(state_i_yes, gamma(i + 1) - 1) - Weight(state_i_no, gamma(i + 1) - 1));
+"""
+    #Crude minimisation function that takes in a function and input list and two constraints.
+    #Returns the number that yields the minimised objective function value.
+    def crappy_min(objective,input_range,constraint1,constraint2):
+        answer_list=[]
+        for i in input_range:
+            if (constraint1(i) and constraint2(i) == True):
+                answer_list.append([i,objective(i)])
+        answer_list.sort(key=lambda answer: answer[1])
+        return answer_list[0][0]
+
+    def compute()
+
 class ResponseApp(QWidget):
     def __init__(self):
         super().__init__()
