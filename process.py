@@ -7,6 +7,9 @@ from PyQt5.QtWidgets import QApplication, QWidget, QPushButton
 from PyQt5.QtGui import QIcon
 from PyQt5.QtCore import pyqtSlot
 
+#nCr utility function
+from scipy.special import comb
+
 #Hey Yi Ran! This is the code for the basic program I've made.
 #Images to be tested are placed in the ./doggos folder and are in jpg format and labelled numerically zero-indexed.
 #I'm using PyQT for the GUI and I'm
@@ -16,6 +19,32 @@ from PyQt5.QtCore import pyqtSlot
 #I hope this function is helpful to you if you're trying to do mass-tests!
 
 #Utility functions
+def sigma(lower_bound,upper_bound,function):
+    sum=0
+    while(lower_bound<upper_bound+1):
+        sum+=function(lower_bound)
+        lower_bound+=1
+    return sum
+
+def set_cardinality(list):
+    return [len(i) for i in list]
+
+#Shifts the list times- times to the right and inserts a zero in front.
+def shift(list,times):
+    if times==0:
+        return list
+    else:
+        return [0]+shift(list,times-1)[0:-1]
+
+#Crude minimisation function that takes in a function and input list and two constraints.
+#Returns the number that yields the minimised objective function value and the objective function value.
+def crappy_min(objective,input_range,constraint1,constraint2):
+    answer_list=[]
+    for i in input_range:
+        if (constraint1(i) and constraint2(i) == True):
+            answer_list.append([i,objective(i)])
+    answer_list.sort(key=lambda answer: answer[1])
+    return answer_list[0]
 
 def check_answers(trait_breed,question):
     stack = []
@@ -59,26 +88,43 @@ class UlamRenyi(object):
     def __init__(self, breed_set,e):
         self.breed_set=breed_set
         self.e=e
-        self.game_state=[]
+        self.game_state=[breed_set]
+        self.cardinal_game_state=set_cardinality(game_state)
         self.game_state_yes=[]
         self.game_state_no=[]
 
-    def set_cardinality(self, list):
-        return [len(i) for i in list]
+    def process_yes(self,question_set):
+        self.game_state[0]=list(set(self.game_state[0])&set(question_set))
+        for i in range(1,len(self.game_state)):
+            self.game_state[i]=list((set(self.game_state[i-1])-set(question_set))+(set(self.game_state[i])&set(question_set)))
 
-    def process_yes(game_state):
+    def process_no(self,question_set):
+        self.game_state[0]=list(set(self.game_state[0])-set(question_set))
+        for i in range(1,len(self.game_state)):
+            self.game_state[i]=list((set(self.game_state[i-1])&set(question_set))+(set(self.game_state[i])-set(question_set)))
 
-    def process_no(game_state):
+    def berkelamp_weight(self,state,no_questions):
+        cardinal_state=set_cardinality(state)
+        return sigma(0,e,lambda i: cardinal_state[i]*sigma(0,e-i,lambda j: comb(no_questions,j,exact=True)))
 
-    def berkelamp_weight
+    def character(self,state):
+        j=0
+        while (berkelamp_weight(state,j>2**j)):
+            j+=1
+        return j
 
-    def character:
 
-    def recursive_f:
+    def recursive_f(self,cardinal_state):
+        if (np.sum(cardinal_game_state)<=2):
+           return character(self.game_state)
+        else:
+            return max(recursive_f([0]+cardinal_state[1:-1])+3,character(self.game_state))
 
-    def gamma:
+    def gamma(self):
+        return [max(recursive_f([0]for i in range(0,e)]
 
-    def process
+    def process(self):
+        if
 
 
 """
@@ -96,16 +142,6 @@ class UlamRenyi(object):
                     [state_i_yes, state_i_no] = StateAfterQues(state_i_sigma, ques_i);
                     diff(j + 1) = abs(Weight(state_i_yes, gamma(i + 1) - 1) - Weight(state_i_no, gamma(i + 1) - 1));
 """
-    #Crude minimisation function that takes in a function and input list and two constraints.
-    #Returns the number that yields the minimised objective function value.
-    def crappy_min(objective,input_range,constraint1,constraint2):
-        answer_list=[]
-        for i in input_range:
-            if (constraint1(i) and constraint2(i) == True):
-                answer_list.append([i,objective(i)])
-        answer_list.sort(key=lambda answer: answer[1])
-        return answer_list[0][0]
-
     def compute()
 
 class ResponseApp(QWidget):
