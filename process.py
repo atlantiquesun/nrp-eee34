@@ -88,44 +88,61 @@ class UlamRenyi(object):
     def __init__(self, breed_set,e):
         self.breed_set=breed_set
         self.e=e
-        self.game_state=[breed_set]
+        self.game_state=[self.breed_set]+[[]]*e
         self.cardinal_game_state=set_cardinality(game_state)
-        self.game_state_yes=[]
-        self.game_state_no=[]
+
+    def cardinal_game_state_yes(self,t):
+        #I'm interpreting Qi Yu's i-1 index where i=0 to be non-existent i.e. 0.
+        return [t[0]]+[self.cardinal_game_state[i]-t[i-1]+t[i] for i in range(1,e+1)]
+
+    def alpha(self,i,j,t):
+        return [0]*(j-1) + self.cardinal_game_state_yes(t)[0:i+1] + self.cardinal_game_state[i]-t[i] + [0]*(j-1)
+
+    def beta(self,i,j,t):
+        return [0]*(j-1) + self.cardinal_game_state_no(t)[0:i+1] + self.cardinal_game_state[i]-t[i] + [0]*(j-1)
+
+    def cardinal_game_state_no(self,t):
+        return [self.cardinal_game_state[0]-t[0]]+[t[i-1]+self.cardinal_game_state[i]-t[i] for i in range(1,e+1)]
+
+    def berkelamp_weight(self,state,q):
+        cardinal_state=self.set_cardinality(state)
+        return np.sum(self.cardinal_game_state[i]*(np.sum(comb(q,j,exact=True) for j in range(0,e-i+1))) for i in range(0,e+1))
+
+    def character(self,state):
+        j=0
+        while (self.berkelamp_weight(state,j)>2**j)):
+            j+=1
+        return j
+
+    def recursive_f(self,cardinal_state):
+        if (np.sum(cardinal_state)<=2):
+           return self.character(cardinal_state)
+        else:
+            return max(self.recursive_f(shift(cardinal_state,1))+3,self.character(cardinal_state))
+
+    def gamma(self,cardinal_state):
+        return [max(self.recursive_f(shift(cardinal_state, self.e - i)), self.recursive_f(cardinal_state) - 3 * (self.e - i)) for i in range(0, e + 1)]
+
+    def run_algorithm(self):
+        t=[0]*(self.e+1)
+        if np.sum(self.cardinal_game_state)==1:
+            print(self.game_state)
+        else:
+            gamma_state=gamma(self.game_state)
+            for i in range(0,e+1):
+                lowest=-1
+                if self.berkelamp_weight(alpha(i,j,t),gamma[i+j]-1) <= 2**(gamma[i+j]-1) and self.berkelamp_weight(alpha(i,j,t),gamma[i+j]-1) <= 2**(gamma[i+j]-1):
+
 
     def process_yes(self,question_set):
         self.game_state[0]=list(set(self.game_state[0])&set(question_set))
-        for i in range(1,len(self.game_state)):
+        for i in range(1,e+1):
             self.game_state[i]=list((set(self.game_state[i-1])-set(question_set))+(set(self.game_state[i])&set(question_set)))
 
     def process_no(self,question_set):
         self.game_state[0]=list(set(self.game_state[0])-set(question_set))
-        for i in range(1,len(self.game_state)):
+        for i in range(1,e+1):
             self.game_state[i]=list((set(self.game_state[i-1])&set(question_set))+(set(self.game_state[i])-set(question_set)))
-
-    def berkelamp_weight(self,state,no_questions):
-        cardinal_state=set_cardinality(state)
-        return sigma(0,e,lambda i: cardinal_state[i]*sigma(0,e-i,lambda j: comb(no_questions,j,exact=True)))
-
-    def character(self,state):
-        j=0
-        while (berkelamp_weight(state,j>2**j)):
-            j+=1
-        return j
-
-
-    def recursive_f(self,cardinal_state):
-        if (np.sum(cardinal_game_state)<=2):
-           return character(self.game_state)
-        else:
-            return max(recursive_f([0]+cardinal_state[1:-1])+3,character(self.game_state))
-
-    def gamma(self):
-        return [max(recursive_f([0]for i in range(0,e)]
-
-    def process(self):
-        if
-
 
 """
     def question(state_sigma):
