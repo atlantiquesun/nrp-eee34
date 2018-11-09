@@ -5,10 +5,6 @@ import numpy as np
 import sys
 import itertools
 
-from PyQt5.QtWidgets import QApplication, QWidget, QPushButton
-from PyQt5.QtGui import QIcon
-from PyQt5.QtCore import pyqtSlot
-
 #nCr utility function
 from scipy.special import comb
 
@@ -34,6 +30,7 @@ def shift(list,times):
 	return [0]*times + list[0:len(list)-times]
 
 #Crude minimisation function that takes in a function and input list and two constraints.
+""" Ignore this.
 #Returns the number that yields the minimised objective function value and the objective function value.
 def crappy_min(objective,input_range,constraint1,constraint2):
 	answer_list=[]
@@ -42,6 +39,7 @@ def crappy_min(objective,input_range,constraint1,constraint2):
 			answer_list.append([i,objective(i)])
 	answer_list.sort(key=lambda answer: answer[1])
 	return answer_list[0]
+"""
 
 def check_answers(trait_breed,question):
 	stack = []
@@ -55,16 +53,6 @@ def check_answers(trait_breed,question):
 		else:
 			stack.append(trait_breed[:,i])
 	return stack
-
-#Takes in the question and the trait_info list, a list of arrays of the trait number, the corresponding trait and the grammar classes it falls under.
-#For instance, [2, long legs, plural] or [5, a nice personality, singular]
-#Quite basic, feel free to edit if you want to!
-#Right now, all it does is just return the question typed in as a string. I don't know how it should be converted haha.
-def rpn_to_english(trait_info, question):
-	string=""
-	for i in question:
-		string+=str(i)+" "
-	return string
 
 #This generates a random boolean breed-trait matrix for mass-testing!
 def generate_breed_trait_matrix(trait_no,breed_no):
@@ -80,14 +68,14 @@ def generate_breed_trait_matrix(trait_no,breed_no):
 
 #Ulam-Renyi Class
 class UlamRenyi(object):
-	def set_sigmaity(self,list):
+	def set_sigma(self,list):
 		return [len(i) for i in list]
 
 	def __init__(self, breed_set,e):
 		self.breed_set=breed_set
 		self.e=e #Number of errors allowed.
 		self.game_state=[self.breed_set]+[[]]*e #Initialising the gamestate as a list of lists.
-		self.sigma_game_state=self.set_sigmaity(self.game_state) #This is the sigma(state).
+		self.sigma_game_state=self.set_sigma(self.game_state) #This is the sigma(state).
 
 	def weight(self,sigma_state,q): #Note, the state here the sigma state.
 		return np.sum([sigma_state[i]*np.sum([comb(q,j,exact=True) for j in range(0,self.e-i+1)]) for i in range(0,self.e+1)])
@@ -147,55 +135,27 @@ class UlamRenyi(object):
 		self.game_state[0] = list(set(self.game_state[0]) & set(question_set))
 		for i in range(1, e + 1):
 			self.game_state[i] = list((set(self.game_state[i - 1]) - set(question_set)) + (set(self.game_state[i]) & set(question_set)))
-		self.sigma_game_state=self.set_sigmaity(self.game_state)
+		self.sigma_game_state=self.self.set_sigma(self.game_state)
 
 	def process_no(self, question_set):
 		self.game_state[0] = list(set(self.game_state[0]) - set(question_set))
 		for i in range(1, e + 1):
 			self.game_state[i] = list((set(self.game_state[i - 1]) & set(question_set)) + (set(self.game_state[i]) - set(question_set)))
-		self.sigma_game_state = self.set_sigmaity(self.game_state)
+		self.sigma_game_state = self.self.set_sigma(self.game_state)
+
+	#Takes in the question and the trait_info list, a list of arrays of the trait number, the corresponding trait and the grammar classes it falls under.
+	#For instance, [2, long legs, plural] or [5, a nice personality, singular]
+	#Quite basic, feel free to edit if you want to!
+	#Right now, all it does is just return the question typed in as a string. I don't know how it should be converted haha.
+	def rpn_to_english(trait_info, question):
+		string=""
+		for i in question:
+			string+=str(i)+" "
+		return string
 
 	def generate_question(self): #Yi-ran, could you help me with this :?
-			"""this doesn't work :(
-	def run_algorithm(self):
-		t=[0]*(self.e+1)
-		if np.sum(self.sigma_game_state)==1:
-			print(self.game_state)
-		else:
-			gamma_state=self.gamma(self.sigma_game_state)
-			for i in range(0,self.e+1):
-				#Just comparing viable numbers and the current best solution to minimise
-				lowest=None
-				lowest_fitness=float('inf')
-				for x in range(0,self.sigma_game_state[i]+1):
-					print(["i",i,"x",x])
-					ques_i = [0]*(self.e-i) + t[:i] + [x]
-					print("ques_i",ques_i)
-					print([(self.weight(self.alpha(i,j,ques_i),gamma_state[i+j]-1),#First s.t.
-						   self.weight(self.beta(i,j,ques_i),gamma_state[i+j]-1), #Second s.t.
-						   2**(gamma_state[i+j]-1)) #Condition
-						   for j in range(1,self.e-i+1)])
-
-					if (all([self.weight(self.alpha(i,j,ques_i),gamma_state[i+j]-1) and #First s.t.
-						   self.weight(self.beta(i,j,ques_i),gamma_state[i+j]-1) #Second s.t.
-						   <= 2**(gamma_state[i+j]-1) #Condition
-						   for j in range(1,self.e-i+1)])) == True: #List comprehension
-						print("yes", self.sigma_game_state_yes(ques_i))
-						print("no", self.sigma_game_state_no(ques_i))
-						current_fitness = abs(
-
-								self.weight(shift(self.sigma_game_state_yes(ques_i),i), gamma_state[i] - 1) -
-								self.weight(shift(self.sigma_game_state_no(ques_i),i), gamma_state[i] - 1)
-							)
-
-						if current_fitness < lowest_fitness:
-							lowest_fitness = current_fitness
-							lowest = x
-				t[i]=lowest
-				print("t",t)
-		return t
-"""
-"""
+		return None
+""" Ignore this.
 	def alpha(self,i,j,t): #Alpha function, as defined by Qi Yu.
 		return ([0]*(self.e-i-j) +
 				self.sigma_game_state_yes(t)[:i+1] +
@@ -209,7 +169,7 @@ class UlamRenyi(object):
 				[0]*(j-1))
 """
 
-"""
+""" Ignore this.
 	def question(state_sigma):
 		num_error=len(state_sigma)-1
 		question=np.zeros(1,num_error+1)
@@ -224,30 +184,6 @@ class UlamRenyi(object):
 					[state_i_yes, state_i_no] = StateAfterQues(state_i_sigma, ques_i);
 					diff(j + 1) = abs(Weight(state_i_yes, gamma(i + 1) - 1) - Weight(state_i_no, gamma(i + 1) - 1));
 """
-class ResponseApp(QWidget):
-	def __init__(self):
-		super().__init__()
-		self.title = 'PyQt5 button - pythonspot.com'
-		self.left = 10
-		self.top = 10
-		self.width = 800
-		self.height = 800
-		self.initUI()
-
-	def initUI(self):
-		self.setWindowTitle(self.title)
-		self.setGeometry(self.left, self.top, self.width, self.height)
-
-		button = QPushButton('PyQt5 button', self)
-		button.setToolTip('This is an example button')
-		button.move(100, 70)
-		button.clicked.connect(self.on_click)
-
-		self.show()
-
-	@pyqtSlot()
-	def on_click(self):
-		print('PyQt5 button click')
 
 trait_no=5
 breed_no=16
@@ -255,14 +191,6 @@ bt_matrix=generate_breed_trait_matrix(trait_no,breed_no)
 ug_game=UlamRenyi(list(range(0,breed_no)),9)
 ug_game.sigma_game_state=[6,7,6,0,100,0,90,0,0,0]
 print(ug_game.run_algorithm())
-"""
-if __name__ == '__main__':
-	app = QApplication(sys.argv)
-	ex = ResponseApp()
-	while(True):
-		print("test")
-	sys.exit(app.exec_())
-"""
 
 
 
