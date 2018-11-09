@@ -1,0 +1,12 @@
+{% if image_to_classify %}
+<h1>Welcome, {{user.username}}.</h1>
+<img src="{{ image_to_classify.image.url }}" height=400px width=400px>
+    <h1>
+        {{image_to_classify.question_to_ask}}
+    </h1>
+    <input type="submit" class="btn" value="Yes" name="yes_btn">
+    <input type="submit" class="btn" value="No" name="no_btn">
+    
+{% else %}
+    <p>Error. You done goofed.</p>
+{% endif %}
