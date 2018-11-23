@@ -16,13 +16,13 @@ def upload(request):
 def answer(request):
     if request.user.is_authenticated:
         user=request.user
-        if Image.objects.filter(user_working_on_task=user.username).count() == 0:
+        if Image.objects.filter(user_working_on_task=user.username).exists()
+            image = Image.objects.filter(user_working_on_task=user.username).first()
+        else: #Here is where I generate the new set.
             image = Image.objects.filter(number_of_times_served=0, breed=None).first()
             #image.number_of_times_served=1
             image.user_working_on_task=user.username
             image.save()
-        else: #Here is where I generate the new set.
-            image = Image.objects.filter(user_working_on_task=user.username).first()
         context = {'image_to_classify': image,
                     'user' : user}
         if(request.GET.get('yes_btn')):
@@ -30,8 +30,3 @@ def answer(request):
         return render(request, 'answer.html', context)
     else:
         return redirect('/accounts/login/')
-
-def process_yes(request, image):
-    return None
-def process_no(request, image):
-    return None
