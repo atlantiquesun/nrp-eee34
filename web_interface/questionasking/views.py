@@ -16,7 +16,8 @@ def upload(request):
 def answer(request):
     if request.user.is_authenticated:
         user=request.user
-        if Image.objects.filter(user_working_on_task=user.username).exists()
+        print(user)
+        if Image.objects.filter(user_working_on_task=user.username).exists():
             image = Image.objects.filter(user_working_on_task=user.username).first()
         else: #Here is where I generate the new set.
             image = Image.objects.filter(number_of_times_served=0, breed=None).first()
