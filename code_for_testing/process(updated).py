@@ -204,16 +204,6 @@ class UlamRenyi(object):
             self.game_state[i] = list((set(self.game_state[i - 1]) & set(question_set)) + (set(self.game_state[i]) - set(question_set)))
         self.sigma_game_state = self.self.set_sigma(self.game_state)
 
-    #Takes in the question and the trait_info list, a list of arrays of the trait number, the corresponding trait and the grammar classes it falls under.
-    #For instance, [2, long legs, plural] or [5, a nice personality, singular]
-    #Quite basic, feel free to edit if you want to!
-    #Right now, all it does is just return the question typed in as a string. I don't know how it should be converted haha.
-    def rpn_to_english(trait_info, question):
-        string=""
-        for i in question:
-            string+=str(i)+" "
-        return string
-
     def prepare_arguments(self,constraint,ClassesNum,TraitMatrix):
         '''
         prepare arguments for 'generate_question'

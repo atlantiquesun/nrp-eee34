@@ -92,17 +92,16 @@ class Image(models.Model):
             # Generate trait-breed matrix.
             self.trait_breed_matrix = str(self.generate_trait_breed_matrix())
             # Generate game_state
+            #1-indexed.
             self.game_state = str(
-                [list(range(0, Breed.objects.count()))] + [[]]*self.errors)
+                [list(range(1, Breed.objects.count()+1))] + [[]]*self.errors)
             print(self.game_state)
         self.sigma_game_state = str(set_sigma(literal_eval(self.game_state)))
         print(self.sigma_game_state)
-        self.question_set_constraint = str(
-            run_algorithm(literal_eval(self.sigma_game_state)))
-        self.question_set = str(generate_question(
-            literal_eval(self.question_set_constraint)))
-        self.question_text = str(nlp_generate_string(
-            literal_eval(self.question_set)))
+        self.question_set_constraint = str(run_algorithm(literal_eval(self.sigma_game_state)))
+        #self.question_set = str(generate_question(self.errors,literal_eval(self.game_state), literal_eval(self.question_set_constraint),Breed.objects.count(),literal_eval(self.trait_breed_matrix)))
+        self.question_text = "Does this dog have a long tail?"
+        #self.question_text = str(nlp_generate_string(literal_eval(self.question_set)))
         super(Image, self).save(*args, **kwargs)
 
     def generate_trait_breed_matrix(self):
