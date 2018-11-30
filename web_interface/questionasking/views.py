@@ -31,3 +31,5 @@ def answer(request):
         return render(request, 'answer.html', context)
     else:
         return redirect('/accounts/login/')
+
+#def process_answer(request):
