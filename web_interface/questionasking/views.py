@@ -3,6 +3,8 @@ from django.shortcuts import get_object_or_404, render, redirect
 
 from .models import Image
 
+from ast import literal_eval
+from .ulamrenyi import *
 # Create your views here.
 def index(request):
     return HttpResponse("Index page, slightly buggy.")
@@ -26,10 +28,15 @@ def answer(request):
             image.save()
         context = {'image_to_classify': image,
                     'user' : user}
-        if(request.GET.get('yes_btn')):
-            print("yest")
         return render(request, 'answer.html', context)
     else:
         return redirect('/accounts/login/')
 
-#def process_answer(request):
+def process_answer(request, pk, answer):
+    ulam_game=Image.objects.get(pk=pk)
+    if answer == "Yes":
+        ulam_game.game_state=str(process_yes(literal_eval(ulam_game.game_state),literal_eval(ulam_game.question_set)))
+    elif answer == "No":
+        ulam_game.game_state=str(process_no(literal_eval(ulam_game.game_state),literal_eval(ulam_game.question_set)))
+    ulam_game.save()
+
