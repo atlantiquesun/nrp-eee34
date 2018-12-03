@@ -156,8 +156,7 @@ def run_algorithm(sigma_state):
                     weight(s_state_i_yes, gamma_state[i] - 1) - weight(s_state_i_no, gamma_state[i] - 1))
                 potential_solutions.append([x, ques_i, fitness])
                 potential_solutions.sort(key=lambda x: x[2])
-            question.append(
-                next(x[0] for x in potential_solutions if condition_fulfilled(errors, i, x[1], sigma_state, gamma_state)))
+            question.append(next((x[0] for x in potential_solutions if condition_fulfilled(errors, i, x[1], sigma_state, gamma_state)),0))
     return question
 
 def process_yes(game_state, question_set):
@@ -212,11 +211,11 @@ def generate_question(errors, game_state, constraint, ClassesNum,TraitMatrix):
                 for j in range(len(constraint)):
                     temp1[0].append([])
                     temp2[0].append([])
-                for q in range(ClassesNum):
-                    if(TraitMatrix[q][k]==0):
-                        temp1[0][classdc[q+1]].append(q+1)
+                for q in classdc.keys():
+                    if(TraitMatrix[q-1][k]==0):
+                        temp1[0][classdc[q]].append(q)
                     else:
-                        temp2[0][classdc[q+1]].append(q+1)
+                        temp2[0][classdc[q]].append(q)
                 temp1.extend([veclen(temp1[0]),fitness(veclen(temp1[0]),constraint,denomdis),[[k+1,0]],coverage(veclen(temp1[0]),ClassesNum)])
                 temp2.extend([veclen(temp2[0]),fitness(veclen(temp2[0]),constraint,denomdis),[[k+1,1]],coverage(veclen(temp2[0]),ClassesNum)])
                 profiles.append(temp1)
@@ -299,3 +298,6 @@ def naturalquestion(errors, game_state, chardic,constraint,ClassesNum,TraitMatri
     else:
         print ("fail to generate a question")
         return None
+
+x=run_algorithm([0,1,2,0])
+print(x)
