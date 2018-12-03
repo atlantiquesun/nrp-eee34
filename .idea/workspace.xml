@@ -3,18 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="faedfdd6-20fc-4cc6-8d26-b2a59df43d73" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/web_interface/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/web_interface/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web_interface/media/284191dc-26d2-4375-ba58-9653335dba47.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web_interface/media/3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web_interface/media/7634c29baf30cd1688843a699e3d4800.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web_interface/media/7634c29baf30cd1688843a699e3d4800_eYXHRgo.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web_interface/media/Shiba-Inu-On-White-01.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web_interface/media/avantgarde.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web_interface/media/griffles_plush_concept_by_gumbug-d572zku.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web_interface/media/how-you-bean-me-irl-3313304.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web_interface/media/photo_2018-10-07_18-35-08.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web_interface/media/yeeett.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web_interface/media/yeeett_yy7dYwX.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web_interface/questionasking/ulamrenyi.py" beforeDir="false" afterPath="$PROJECT_DIR$/web_interface/questionasking/ulamrenyi.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -318,7 +306,7 @@
       <window_info content_ui="combo" id="Project" order="0" weight="0.10542797" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.30939808" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.30939808" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
