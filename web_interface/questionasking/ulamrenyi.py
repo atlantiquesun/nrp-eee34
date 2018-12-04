@@ -173,7 +173,7 @@ def process_no(game_state, question_set):
     e=len(game_state)
     evaluated_game_state=[[]]*e
     evaluated_game_state[0] = list(set(game_state[0]) - set(question_set))
-    for i in range(0, e-1):
+    for i in range(1, e):
         evaluated_game_state[i] = list(
             (set(game_state[i-1]) & set(question_set)) | (set(game_state[i]) - set(question_set)))
     return evaluated_game_state
@@ -298,6 +298,3 @@ def naturalquestion(errors, game_state, chardic,constraint,ClassesNum,TraitMatri
     else:
         print ("fail to generate a question")
         return None
-
-x=run_algorithm([0,1,2,0])
-print(x)
