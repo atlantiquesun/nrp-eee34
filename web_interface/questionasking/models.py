@@ -3,7 +3,7 @@ from ast import literal_eval
 from django.forms import ModelForm
 from .ulamrenyi import *
 from django.db.models import Exists
-
+import numpy as np
 # For generating Breed matrix.
 from django.db.models.signals import m2m_changed
 from django.dispatch import receiver
@@ -95,11 +95,16 @@ class Image(models.Model):
             #1-indexed.
             self.game_state = str([list(range(1, Breed.objects.count()+1))] + [[]]*self.errors)
             print(self.game_state)
-        self.sigma_game_state = str(set_sigma(literal_eval(self.game_state)))
-        print(self.sigma_game_state)
-        self.question_set_constraint = str(run_algorithm(literal_eval(self.sigma_game_state)))
-        (a,b)=naturalquestion(self.errors, literal_eval(self.game_state), literal_eval(self.trait_dictionary), literal_eval(self.question_set_constraint),  Breed.objects.count(), literal_eval(self.trait_breed_matrix))
-        (self.question_set,self.question_text) = (str(a),str(b))
+            self.sigma_game_state = str(set_sigma(literal_eval(self.game_state)))
+        if np.sum(literal_eval(self.sigma_game_state))==1:
+            game_state=self.game_state
+            index = next(i for i in game_state if len(i)>0)
+            self.breed=literal_eval(self.breed_dictionary)[index.pop()]
+        else:
+            print(self.sigma_game_state)
+            self.question_set_constraint = str(run_algorithm(literal_eval(self.sigma_game_state)))
+            (a,b)=naturalquestion(self.errors, literal_eval(self.game_state), literal_eval(self.trait_dictionary), literal_eval(self.question_set_constraint),  Breed.objects.count(), literal_eval(self.trait_breed_matrix))
+            (self.question_set,self.question_text) = (str(a),str(b))
         super(Image, self).save(*args, **kwargs)
 
     def generate_trait_breed_matrix(self):
