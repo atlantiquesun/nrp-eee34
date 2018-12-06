@@ -2,8 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="faedfdd6-20fc-4cc6-8d26-b2a59df43d73" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code_for_testing/process(newest).py" beforeDir="false" afterPath="$PROJECT_DIR$/code_for_testing/process(newest).py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_traits_10_100_times.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_traits_10_1_times.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_traits_11_1_times.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_traits_12_1000_times.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_traits_12_1_times.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_traits_13_1_times.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_traits_14_1_times.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_traits_16_1000_times.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_traits_16_100_times.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_traits_16_1_times.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_traits_2_10000_times.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_traits_2_1000_times.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_traits_2_250_times.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_traits_31_500_times.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_traits_32_1000_times.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_traits_3_1000_times.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_traits_3_250_times.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_traits_60_1000_times.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_traits_60_500_times.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_traits_8_1000_times.csv" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,7 +37,7 @@
         <entry file="file://$PROJECT_DIR$/web_interface/questionasking/models.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1734">
-              <caret line="110" selection-start-line="110" selection-end-line="110" />
+              <caret line="115" selection-start-line="115" selection-end-line="115" />
             </state>
           </provider>
         </entry>
@@ -53,8 +72,8 @@
       <file leaf-file-name="editedprocess.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/code_for_testing/generation of data for report/editedprocess.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="348">
-              <caret line="355" column="18" selection-start-line="355" selection-start-column="18" selection-end-line="355" selection-end-column="18" />
+            <state relative-caret-position="127">
+              <caret line="342" lean-forward="true" selection-start-line="342" selection-end-line="342" />
               <folding>
                 <element signature="e#0#20#0" expanded="true" />
               </folding>
@@ -355,7 +374,7 @@
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.30939808" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.30939808" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -398,11 +417,6 @@
           <url>file://$PROJECT_DIR$/data/greedy.py</url>
           <line>7</line>
           <option name="timeStamp" value="33" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/web_interface/questionasking/ulamrenyi.py</url>
-          <line>301</line>
-          <option name="timeStamp" value="81" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/web_interface/questionasking/ulamrenyi.py</url>
@@ -589,7 +603,7 @@
     <entry file="file://$PROJECT_DIR$/web_interface/questionasking/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1734">
-          <caret line="110" selection-start-line="110" selection-end-line="110" />
+          <caret line="115" selection-start-line="115" selection-end-line="115" />
         </state>
       </provider>
     </entry>
@@ -644,8 +658,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/code_for_testing/generation of data for report/editedprocess.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="355" column="18" selection-start-line="355" selection-start-column="18" selection-end-line="355" selection-end-column="18" />
+        <state relative-caret-position="127">
+          <caret line="342" lean-forward="true" selection-start-line="342" selection-end-line="342" />
           <folding>
             <element signature="e#0#20#0" expanded="true" />
           </folding>
