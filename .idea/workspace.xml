@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="faedfdd6-20fc-4cc6-8d26-b2a59df43d73" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/web_interface/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/web_interface/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code_for_testing/process(newest).py" beforeDir="false" afterPath="$PROJECT_DIR$/code_for_testing/process(newest).py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -25,17 +26,56 @@
       <file leaf-file-name="with union.py" pinned="false" current-in-tab="false">
         <entry file="file://D:/Downloads/with union.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
+            <state relative-caret-position="476">
               <caret line="33" column="18" selection-start-line="33" selection-start-column="18" selection-end-line="33" selection-end-column="18" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ulamrenyi.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ulamrenyi.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web_interface/questionasking/ulamrenyi.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="173">
-              <caret line="261" column="76" selection-start-line="261" selection-start-column="76" selection-end-line="261" selection-end-column="76" />
+            <state relative-caret-position="183">
+              <caret line="161" selection-start-line="161" selection-end-line="169" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="process(newest).py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/code_for_testing/process(newest).py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="663">
+              <caret line="49" selection-start-line="49" selection-end-line="58" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="editedprocess.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/code_for_testing/generation of data for report/editedprocess.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="348">
+              <caret line="355" column="18" selection-start-line="355" selection-start-column="18" selection-end-line="355" selection-end-column="18" />
+              <folding>
+                <element signature="e#0#20#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="worksheet.py" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/xlsxwriter/worksheet.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="7446">
+              <caret line="470" selection-start-line="470" selection-end-line="470" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="data_collection_for_sequential.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/code_for_testing/data/data_collection_for_sequential.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1564">
+              <caret line="98" selection-start-line="98" selection-end-line="98" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -43,8 +83,8 @@
       <file leaf-file-name="_pydev_execfile.py" pinned="false" current-in-tab="false">
         <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" selection-start-line="17" selection-end-line="17" />
+            <state>
+              <caret column="54" selection-start-column="54" selection-end-column="54" />
             </state>
           </provider>
         </entry>
@@ -52,8 +92,8 @@
       <file leaf-file-name="codecs.py" pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/codecs.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="227">
-              <caret line="310" selection-start-line="310" selection-end-line="310" />
+            <state relative-caret-position="5321">
+              <caret line="313" column="67" selection-start-line="313" selection-start-column="67" selection-end-line="313" selection-end-column="67" />
             </state>
           </provider>
         </entry>
@@ -69,13 +109,11 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>question[2]</find>
       <find>best_question</find>
       <find>falsenegati</find>
       <find>trait_no</find>
       <find>for i in range</find>
       <find>len</find>
-      <find>process</find>
       <find>sigma</find>
       <find>breed_set</find>
       <find>recursive_f</find>
@@ -93,6 +131,14 @@
       <find>self.e</find>
       <find>shift</find>
       <find>run</find>
+      <find>next</find>
+      <find>traitb</find>
+      <find>is in</find>
+      <find>update</find>
+      <find>check</find>
+      <find>print</find>
+      <find>generates</find>
+      <find>process</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -112,6 +158,7 @@
         <option value="$PROJECT_DIR$/process.py" />
         <option value="$PROJECT_DIR$/web_interface/questionasking/models.py" />
         <option value="$PROJECT_DIR$/web_interface/questionasking/ulamrenyi.py" />
+        <option value="$PROJECT_DIR$/code_for_testing/generation of data for report/editedprocess.py" />
       </list>
     </option>
   </component>
@@ -143,7 +190,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.ulamrenyi">
+  <component name="RunManager" selected="Python.editedprocess">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="nrp-eee34" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -180,7 +227,7 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="greedy" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="editedprocess" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="nrp-eee34" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -192,7 +239,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/data/greedy.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/code_for_testing/generation of data for report/editedprocess.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -253,19 +300,19 @@
       <option name="MODULE_MODE" value="false" />
     </configuration>
     <list>
-      <item itemvalue="Python.greedy" />
       <item itemvalue="Python.process" />
       <item itemvalue="Python.branchandbound" />
       <item itemvalue="Python.models" />
       <item itemvalue="Python.ulamrenyi" />
+      <item itemvalue="Python.editedprocess" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.editedprocess" />
         <item itemvalue="Python.ulamrenyi" />
         <item itemvalue="Python.models" />
         <item itemvalue="Python.process" />
         <item itemvalue="Python.branchandbound" />
-        <item itemvalue="Python.greedy" />
       </list>
     </recent_temporary>
   </component>
@@ -306,13 +353,13 @@
       <window_info content_ui="combo" id="Project" order="0" weight="0.10542797" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.30939808" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.30939808" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3347413" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3347413" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -362,92 +409,75 @@
           <line>150</line>
           <option name="timeStamp" value="83" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/code_for_testing/generation of data for report/editedprocess.py</url>
+          <line>312</line>
+          <option name="timeStamp" value="90" />
+        </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
       <default-breakpoints>
-        <breakpoint log-message="true" type="python-exception">
+        <breakpoint enabled="true" log-message="true" type="python-exception">
           <properties notifyOnTerminate="true" exception="BaseException">
             <option name="notifyOnTerminate" value="true" />
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="84" />
+      <option name="time" value="91" />
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
       <expression>
-        <expression-string>self.alpha(i,j,ques_i</expression-string>
+        <expression-string>process_no([[1,2],[3,4]],[1,3])</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>comb(73777777754645646546464645645645645645,5,exact=True)</expression-string>
+        <expression-string>process_no([[1,2,3],[4,5,6]],[1,4])</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>comb(73777777754645646546464645645,5,exact=True)</expression-string>
+        <expression-string>process_yes([[1,2,3],[4,5,6]],[1,4])</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>comb(7377777775464564,5,exact=True)</expression-string>
+        <expression-string>gamma([15,0])</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>comb(737777777546456,5,exact=True)</expression-string>
+        <expression-string>gamma([15,0,0])</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>comb(737777777546,5,exact=True)</expression-string>
+        <expression-string>gamma([16,0,0])</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>comb(737777777,5,exact=True)</expression-string>
+        <expression-string>gamma([16,0,0]</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>comb(73777777,5,exact=True)</expression-string>
+        <expression-string>gamma([7,0])</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>comb(7377777,5,exact=True)</expression-string>
+        <expression-string>gamma([32,0])</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28271">
-          <caret line="1663" selection-start-line="1663" selection-end-line="1663" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/greedy.py" />
-    <entry file="file://$USER_HOME$/AppData/Roaming/Python/Python36/site-packages/numpy/core/arrayprint.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22355">
-          <caret line="1315" selection-start-line="1315" selection-end-line="1315" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/old stuff/ttests.py" />
     <entry file="file://$PROJECT_DIR$/old stuff/test1 (2).py" />
     <entry file="file://$PROJECT_DIR$/GUI.py" />
@@ -468,13 +498,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/data/greedy.py" />
-    <entry file="file://$USER_HOME$/AppData/Roaming/Python/Python36/site-packages/numpy/core/arrayprint.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22355">
-          <caret line="1315" selection-start-line="1315" selection-end-line="1315" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/AppData/Roaming/Python/Python36/site-packages/numpy/core/arrayprint.py" />
     <entry file="file://$PROJECT_DIR$/old stuff/ttests.py" />
     <entry file="file://$PROJECT_DIR$/old stuff/test1 (2).py" />
     <entry file="file://$PROJECT_DIR$/process.py" />
@@ -552,46 +576,15 @@
     <entry file="file://$PROJECT_DIR$/GUI.py" />
     <entry file="file://$PROJECT_DIR$/parser.py" />
     <entry file="file://$PROJECT_DIR$/data/greedy.py" />
-    <entry file="file://$USER_HOME$/AppData/Roaming/Python/Python36/site-packages/numpy/core/arrayprint.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22355">
-          <caret line="1315" selection-start-line="1315" selection-end-line="1315" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/AppData/Roaming/Python/Python36/site-packages/numpy/core/arrayprint.py" />
     <entry file="file://$PROJECT_DIR$/old stuff/rewraew.py" />
     <entry file="file://$PROJECT_DIR$/old stuff/test1 (2).py" />
     <entry file="file://$PROJECT_DIR$/old stuff/ttests.py" />
     <entry file="file://$PROJECT_DIR$/branchandbound.py" />
     <entry file="file://$PROJECT_DIR$/old stuff/sequential_question_v2.py" />
-    <entry file="file://$USER_HOME$/AppData/Roaming/Python/Python36/site-packages/numpy/core/_methods.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Roaming/Python/Python36/site-packages/numpy/core/fromnumeric.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="31790">
-          <caret line="1881" selection-start-line="1881" selection-end-line="1881" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Roaming/Python/Python36/site-packages/scipy/special/basic.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30532">
-          <caret line="1811" selection-start-line="1811" selection-end-line="1811" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/AppData/Roaming/Python/Python36/site-packages/numpy/core/_methods.py" />
+    <entry file="file://$USER_HOME$/AppData/Roaming/Python/Python36/site-packages/numpy/core/fromnumeric.py" />
+    <entry file="file://$USER_HOME$/AppData/Roaming/Python/Python36/site-packages/scipy/special/basic.py" />
     <entry file="file://$PROJECT_DIR$/process.py" />
     <entry file="file://$PROJECT_DIR$/web_interface/questionasking/models.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -602,22 +595,60 @@
     </entry>
     <entry file="file://D:/Downloads/with union.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
+        <state relative-caret-position="476">
           <caret line="33" column="18" selection-start-line="33" selection-start-column="18" selection-end-line="33" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="54" selection-start-column="54" selection-end-column="54" />
         </state>
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/codecs.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="310" selection-start-line="310" selection-end-line="310" />
+        <state relative-caret-position="5321">
+          <caret line="313" column="67" selection-start-line="313" selection-start-column="67" selection-end-line="313" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code_for_testing/data/data_collection_for_sequential.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1564">
+          <caret line="98" selection-start-line="98" selection-end-line="98" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/xlsxwriter/worksheet.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7446">
+          <caret line="470" selection-start-line="470" selection-end-line="470" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code_for_testing/process(newest).py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="49" selection-start-line="49" selection-end-line="58" selection-end-column="41" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web_interface/questionasking/ulamrenyi.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="261" column="76" selection-start-line="261" selection-start-column="76" selection-end-line="261" selection-end-column="76" />
+        <state relative-caret-position="183">
+          <caret line="161" selection-start-line="161" selection-end-line="169" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code_for_testing/generation of data for report/editedprocess.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="355" column="18" selection-start-line="355" selection-start-column="18" selection-end-line="355" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

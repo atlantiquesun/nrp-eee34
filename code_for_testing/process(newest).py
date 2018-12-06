@@ -237,11 +237,11 @@ class UlamRenyi(object):
                     for j in range(len(constraint)):
                         temp1[0].append([])
                         temp2[0].append([])
-                    for q in range(ClassesNum):
-                        if(TraitMatrix[q][k]==0):
-                            temp1[0][classdc[q+1]].append(q+1)
+                    for q in classdc.keys():
+                        if(TraitMatrix[q-1][k]==0):
+                            temp1[0][classdc[q]].append(q)
                         else:
-                            temp2[0][classdc[q+1]].append(q+1)
+                            temp2[0][classdc[q]].append(q)
                     temp1.extend([veclen(temp1[0]),fitness(veclen(temp1[0]),constraint,denomdis),[[k+1,0]],coverage(veclen(temp1[0]),ClassesNum)])
                     temp2.extend([veclen(temp2[0]),fitness(veclen(temp2[0]),constraint,denomdis),[[k+1,1]],coverage(veclen(temp2[0]),ClassesNum)])
                     profiles.append(temp1)
