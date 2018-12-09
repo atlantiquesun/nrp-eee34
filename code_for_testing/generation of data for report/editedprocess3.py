@@ -7,6 +7,7 @@ from copy import deepcopy
 from num2words import num2words
 import random
 import csv
+import multiprocessing as mp
 
 # Yi-ran's helper functions.
 def distance(vector_1,vector_2):
@@ -352,7 +353,7 @@ def generate_breed_trait_matrix(trait_no,breed_no):
                 trait_breed.append(rand_breed)
     return trait_breed
 
-reliabilities_to_test=[0.8]
+reliabilities_to_test=[0.9]
 times_to_test=1000
 number_of_datapoints=16
 for reliability in reliabilities_to_test:

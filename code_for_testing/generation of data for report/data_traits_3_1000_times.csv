@@ -1,0 +1,8 @@
+trait number,breed number,expected numbers of errors,average number of questions asked,failed cases,successful answer,unsuccessful answer,success rate
+3,2,1,2.195,0,979,21,0.979
+3,3,1,3.023,0,959,41,0.959
+3,4,1,3.389,0,941,59,0.941
+3,5,1,4.156,0,906,94,0.906
+3,6,1,4.394,0,906,94,0.906
+3,7,1,4.812,0,894,106,0.894
+3,8,1,5.296,0,901,99,0.901
