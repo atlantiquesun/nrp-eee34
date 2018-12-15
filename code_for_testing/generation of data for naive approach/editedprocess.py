@@ -7,7 +7,6 @@ from copy import deepcopy
 from num2words import num2words
 import random
 import csv
-import multiprocessing as mp
 
 # Yi-ran's helper functions.
 def distance(vector_1,vector_2):
@@ -342,6 +341,40 @@ class UlamRenyi(object):
         else:
             self.done=True
 
+class NaiveApproach(object):
+    def __init__(self, trait_breed_matrix, reliability_of_worker):
+        self.trait_breed_matrix = trait_breed_matrix
+        self.e=None
+        self.no_classes = len(self.trait_breed_matrix)
+        self.no_traits = len(trait_breed_matrix[0])
+        self.reliability_of_worker=reliability_of_worker
+        self.questions_asked = self.no_traits #Since you're asking a trait for every question.
+        #self.e=next(e for e in count(1, 1) if (1-self.reliability_of_worker)*gamma(set_sigma([list(range(1,self.no_classes+1))]+[[]]*e))[-1] <= e)
+        #self.game_state = [list(range(1,self.no_classes+1))] + [[]]*self.e #Initialising the gamestate as a list of lists.
+        self.correct_breed = np.random.randint(1, self.no_classes + 1)
+        self.correct_breed_traits = self.trait_breed_matrix[self.correct_breed-1]
+        self.anyerror= False
+        self.answered_breed=self.answer()
+    def answer(self):
+        response=[]
+        for i in range(self.no_traits):
+            if self.correct_breed_traits[i] == 1:
+                if random.uniform(0,1) < self.reliability_of_worker:
+                    response.append(1)
+                else:
+                    response.append(0)
+            elif self.correct_breed_traits[i] == 0:
+                if random.uniform(0,1) < self.reliability_of_worker:
+                    response.append(0)
+                else:
+                    response.append(1)
+        hamming_distances = list(map(lambda x: hammingdistance(x,response), self.trait_breed_matrix))
+        minimum_value = min(hamming_distances)
+        likely_answers = [i for i, x in enumerate(hamming_distances) if x == minimum_value]
+        return random.choice(likely_answers)+1
+
+
+
 def generate_breed_trait_matrix(trait_no,breed_no):
     trait_breed=[]
     for _ in range(breed_no):
@@ -353,7 +386,7 @@ def generate_breed_trait_matrix(trait_no,breed_no):
                 trait_breed.append(rand_breed)
     return trait_breed
 
-reliabilities_to_test=[0.9]
+reliabilities_to_test=[0.7, 0.8, 0.9]
 times_to_test=1000
 number_of_datapoints=16
 for reliability in reliabilities_to_test:
@@ -373,19 +406,18 @@ for reliability in reliabilities_to_test:
             unsuccessful=0
             for k in range(times_to_test):
                 print("test{0}".format(k))
-                game=UlamRenyi(generate_breed_trait_matrix(i,j),reliability)
-                if game.anyerror==False:
-                    test_list.append(game.questions_asked)
-                    breed = next(i for i in game.game_state if i != []).pop()
-                    if breed == game.correct_breed:
+                naive=NaiveApproach(generate_breed_trait_matrix(i,j),reliability)
+                if naive.anyerror==False:
+                    test_list.append(naive.questions_asked)
+                    if naive.answered_breed == naive.correct_breed:
                         successful+=1
                     else:
                         unsuccessful+=1
                 else:
                     errors+=1
             success_rate=(successful)/(successful+unsuccessful)
-            print([i,j,game.e,np.average(test_list),errors,successful,unsuccessful,success_rate])
-            datawriter.writerow([i,j,game.e,np.average(test_list),errors,successful,unsuccessful,success_rate])
+            print([i,j,naive.e,np.average(test_list),errors,successful,unsuccessful,success_rate])
+            datawriter.writerow([i,j,naive.e,np.average(test_list),errors,successful,unsuccessful,success_rate])
             j+=step
         f.close()
 
