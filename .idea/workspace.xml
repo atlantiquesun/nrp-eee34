@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="faedfdd6-20fc-4cc6-8d26-b2a59df43d73" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/nrp-eee34.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/nrp-eee34.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code_for_testing/generation of data for report/data_traits_3_1000_times.csv" beforeDir="false" afterPath="$PROJECT_DIR$/code_for_testing/generation of data for report/data_traits_3_1000_times.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code_for_testing/generation of data for report/editedprocess.py" beforeDir="false" afterPath="$PROJECT_DIR$/code_for_testing/generation of data for report/editedprocess.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code_for_testing/generation of data for report/editedprocess2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code_for_testing/generation of data for report/editedprocess3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reliability_0.7_data_traits_2_1000_times.csv" beforeDir="false" afterPath="$PROJECT_DIR$/reliability_0.7_data_traits_2_1000_times.csv" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,17 +21,56 @@
       <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web_interface/questionasking/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1819">
+            <state relative-caret-position="468">
               <caret line="115" selection-start-line="115" selection-end-line="115" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="with union.py" pinned="false" current-in-tab="false">
-        <entry file="file://D:/Downloads/with union.py">
+      <file leaf-file-name="editedprocess.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/code_for_testing/generation of data for naive approach/editedprocess.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="33" column="18" selection-start-line="33" selection-start-column="18" selection-end-line="33" selection-end-column="18" />
+            <state relative-caret-position="51">
+              <caret line="392" column="20" selection-start-line="392" selection-start-column="20" selection-end-line="392" selection-end-column="20" />
+              <folding>
+                <element signature="e#0#20#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_methods.py" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/site-packages/numpy/core/_methods.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="131">
+              <caret line="31" selection-start-line="31" selection-end-line="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="fromnumeric.py" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/site-packages/numpy/core/fromnumeric.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="124">
+              <caret line="1100" selection-start-line="1100" selection-end-line="1100" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="numeric.py" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/site-packages/numpy/core/numeric.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="131">
+              <caret line="500" selection-start-line="500" selection-end-line="500" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="random.py" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/random.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="175">
+              <caret line="261" selection-start-line="261" selection-end-line="261" />
             </state>
           </provider>
         </entry>
@@ -42,71 +84,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="process(newest).py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/code_for_testing/process(newest).py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="663">
-              <caret line="49" selection-start-line="49" selection-end-line="58" selection-end-column="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="editedprocess.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/code_for_testing/generation of data for report/editedprocess.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="364" column="18" lean-forward="true" selection-start-line="364" selection-start-column="18" selection-end-line="364" selection-end-column="18" />
-              <folding>
-                <element signature="e#0#20#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="editedprocess_multithreaded.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/code_for_testing/generation of data for report/editedprocess_multithreaded.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="304" column="54" lean-forward="true" selection-start-line="304" selection-start-column="54" selection-end-line="304" selection-end-column="54" />
-              <folding>
-                <element signature="e#0#20#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="worksheet.py" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/xlsxwriter/worksheet.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="7990">
-              <caret line="470" selection-start-line="470" selection-end-line="470" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="data_collection_for_sequential.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/code_for_testing/data/data_collection_for_sequential.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1564">
-              <caret line="98" selection-start-line="98" selection-end-line="98" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="_pydev_execfile.py" pinned="false" current-in-tab="false">
         <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="54" selection-start-column="54" selection-end-column="54" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="codecs.py" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/codecs.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5321">
-              <caret line="313" column="67" selection-start-line="313" selection-start-column="67" selection-end-line="313" selection-end-column="67" />
+            <state relative-caret-position="270">
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
             </state>
           </provider>
         </entry>
@@ -173,6 +155,7 @@
         <option value="$PROJECT_DIR$/web_interface/questionasking/ulamrenyi.py" />
         <option value="$PROJECT_DIR$/code_for_testing/generation of data for report/editedprocess.py" />
         <option value="$PROJECT_DIR$/code_for_testing/generation of data for report/editedprocess_multithreaded.py" />
+        <option value="$PROJECT_DIR$/code_for_testing/generation of data for naive approach/editedprocess.py" />
       </list>
     </option>
   </component>
@@ -190,7 +173,7 @@
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/Users/Conrad/AppData/Local/Programs/Python/Python36/Lib/codecs.py" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -204,7 +187,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.editedprocess">
+  <component name="RunManager" selected="Python.editedprocess (1)">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="nrp-eee34" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -223,19 +206,19 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="branchandbound" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="editedprocess (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="nrp-eee34" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="C:\Users\Conrad\AppData\Local\Programs\Python\Python36\python.exe" />
+      <option name="SDK_HOME" value="C:\Users\Conrad\AppData\Local\Programs\Python\Python37-32\python.exe" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/branchandbound.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/code_for_testing/generation of data for naive approach/editedprocess.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -315,18 +298,18 @@
     </configuration>
     <list>
       <item itemvalue="Python.process" />
-      <item itemvalue="Python.branchandbound" />
       <item itemvalue="Python.models" />
       <item itemvalue="Python.ulamrenyi" />
       <item itemvalue="Python.editedprocess" />
+      <item itemvalue="Python.editedprocess (1)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.editedprocess (1)" />
         <item itemvalue="Python.editedprocess" />
         <item itemvalue="Python.ulamrenyi" />
         <item itemvalue="Python.models" />
         <item itemvalue="Python.process" />
-        <item itemvalue="Python.branchandbound" />
       </list>
     </recent_temporary>
   </component>
@@ -361,18 +344,19 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.10542797" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.30939808" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.30866143" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3347413" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.33385828" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -384,21 +368,21 @@
     <layout-to-restore>
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.10542797" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3326226" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Python Console" order="7" />
+      <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3220697" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="10" />
-      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Python Console" order="7" />
     </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -422,6 +406,11 @@
           <line>312</line>
           <option name="timeStamp" value="90" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/code_for_testing/generation of data for naive approach/editedprocess.py</url>
+          <line>370</line>
+          <option name="timeStamp" value="91" />
+        </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
@@ -433,7 +422,7 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="91" />
+      <option name="time" value="92" />
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
@@ -486,17 +475,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/old stuff/test1 (2).py" />
-    <entry file="file://$PROJECT_DIR$/GUI.py" />
-    <entry file="file://$PROJECT_DIR$/old stuff/sequential_question_v2.py" />
-    <entry file="file://$PROJECT_DIR$/parser.py" />
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28271">
-          <caret line="1663" selection-start-line="1663" selection-end-line="1663" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -595,53 +573,16 @@
     <entry file="file://$PROJECT_DIR$/process.py" />
     <entry file="file://$PROJECT_DIR$/web_interface/questionasking/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1819">
+        <state relative-caret-position="468">
           <caret line="115" selection-start-line="115" selection-end-line="115" />
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/Downloads/with union.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="33" column="18" selection-start-line="33" selection-start-column="18" selection-end-line="33" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="54" selection-start-column="54" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/codecs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5321">
-          <caret line="313" column="67" selection-start-line="313" selection-start-column="67" selection-end-line="313" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/code_for_testing/data/data_collection_for_sequential.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1564">
-          <caret line="98" selection-start-line="98" selection-end-line="98" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/xlsxwriter/worksheet.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7990">
-          <caret line="470" selection-start-line="470" selection-end-line="470" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/code_for_testing/process(newest).py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="49" selection-start-line="49" selection-end-line="58" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://D:/Downloads/with union.py" />
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/codecs.py" />
+    <entry file="file://$PROJECT_DIR$/code_for_testing/data/data_collection_for_sequential.py" />
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/xlsxwriter/worksheet.py" />
+    <entry file="file://$PROJECT_DIR$/code_for_testing/process(newest).py" />
     <entry file="file://$PROJECT_DIR$/web_interface/questionasking/ulamrenyi.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2601">
@@ -649,20 +590,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/code_for_testing/generation of data for report/editedprocess.py">
+    <entry file="file://$PROJECT_DIR$/code_for_testing/generation of data for report/editedprocess.py" />
+    <entry file="file://$PROJECT_DIR$/code_for_testing/generation of data for report/editedprocess_multithreaded.py" />
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/site-packages/numpy/core/fromnumeric.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="364" column="18" lean-forward="true" selection-start-line="364" selection-start-column="18" selection-end-line="364" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#20#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="124">
+          <caret line="1100" selection-start-line="1100" selection-end-line="1100" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/code_for_testing/generation of data for report/editedprocess_multithreaded.py">
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="304" column="54" lean-forward="true" selection-start-line="304" selection-start-column="54" selection-end-line="304" selection-end-column="54" />
+        <state relative-caret-position="270">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/site-packages/numpy/core/_methods.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/site-packages/numpy/core/numeric.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="500" selection-start-line="500" selection-end-line="500" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/random.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="261" selection-start-line="261" selection-end-line="261" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code_for_testing/generation of data for naive approach/editedprocess.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="392" column="20" selection-start-line="392" selection-start-column="20" selection-end-line="392" selection-end-column="20" />
           <folding>
             <element signature="e#0#20#0" expanded="true" />
           </folding>
