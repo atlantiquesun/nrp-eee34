@@ -133,10 +133,11 @@ def mergesol(l1,l2,uoi):
 class UlamRenyi(object):
     def set_sigma(self,list):
         return [len(i) for i in list]
-    def __init__(self, breed_set,e):
-        self.breed_set=breed_set
+    def __init__(self, traitbree, e):
+        self.questions_asked=0:
+        self.traitbree=traitbree
         self.e=e #Number of errors allowed.
-        self.game_state=[self.breed_set]+[[]]*e #Initialising the gamestate as a list of lists.
+        self.game_state=[self.traitbree]+[[]]*e #Initialising the gamestate as a list of lists.
         self.sigma_game_state=self.set_sigma(self.game_state) #This is the sigma(state).
 
     def weight(self,sigma_state,q): #Note, the state here the sigma state.
@@ -326,10 +327,10 @@ class UlamRenyi(object):
             return None
 
 '''
-def __init__(self, breed_set=None,e,TraitMatrix,ClassesNum):
-        self.breed_set=breed_set
+def __init__(self, traitbree=None,e,TraitMatrix,ClassesNum):
+        self.traitbree=traitbree
         self.e=e #Number of errors allowed.
-        self.game_state=[self.breed_set]+[[]]*e #Initialising the gamestate as a list of lists.
+        self.game_state=[self.traitbree]+[[]]*e #Initialising the gamestate as a list of lists.
         self.sigma_game_state=self.set_sigma(self.game_state) #This is the sigma(state).
         self.TraitMatrix=TraitMatrix
         self.ClassesNum=ClassesNum #number of breeds in total
@@ -364,7 +365,7 @@ def singletest(ClassesNum,TraitsNum,e):
     denomdis: see the formula
     '''
     (TraitMatrix,question,states)=generate(ClassesNum,TraitsNum,e)
-    testcase=UlamRenyi(e=e,breed_set=list(range(1,ClassesNum+1)))
+    testcase=UlamRenyi(e=e,traitbree=list(range(1,ClassesNum+1)))
     constraint=veclen(question[0])
     chardic={1:'long tail',2:'short hair',3:'sharp teeth',4:'black fur',5:'large body size',6:'short legs',7:'short tail'}
     testcase.game_state=states #set the current game state
