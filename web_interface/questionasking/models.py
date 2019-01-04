@@ -10,8 +10,6 @@ from django.dispatch import receiver
 
 # To whoever has the displeasure of reading this mess.
 # Due to inherent limitations regarding the storing of arrays in databases, I am storing the array as a string and running literal_eval on it. You should not do this.
-
-
 class Trait(models.Model):
     trait_name = models.CharField(max_length=50)
 
@@ -97,9 +95,14 @@ class Image(models.Model):
             print(self.game_state)
             self.sigma_game_state = str(set_sigma(literal_eval(self.game_state)))
         if np.sum(literal_eval(self.sigma_game_state))==1:
-            game_state=self.game_state
+            game_state=literal_eval(self.game_state)
+            print(game_state)
             index = next(i for i in game_state if len(i)>0)
-            self.breed=literal_eval(self.breed_dictionary)[index.pop()]
+            print("index:"+str(index))
+            name=literal_eval(self.breed_dictionary)[index.pop()]
+            print(name)
+            self.breed=list(Breed.objects.filter(breed_name=name)).pop()
+            self.user_working_on_task=None
         else:
             print(self.sigma_game_state)
             self.question_set_constraint = str(run_algorithm(literal_eval(self.sigma_game_state)))

@@ -21,13 +21,19 @@ def answer(request):
         print(user)
         if Image.objects.filter(user_working_on_task=user.username).exists():
             image = Image.objects.filter(user_working_on_task=user.username).first()
+            context = {'image_to_classify': image,
+                        'user' : user}
         else: #Here is where I generate the new set.
             image = Image.objects.filter(number_of_times_served=0, breed=None).first()
+            if image==None:
+                context = {'image_to_classify': image,
+                        'user' : "None"}
             #image.number_of_times_served=1
-            image.user_working_on_task=user.username
-            image.save()
-        context = {'image_to_classify': image,
-                    'user' : user}
+            else:
+                image.user_working_on_task=user.username
+                image.save()
+                context = {'image_to_classify': image,
+                        'user' : user}
         return render(request, 'answer.html', context)
     else:
         return redirect('/accounts/login/')
@@ -38,6 +44,8 @@ def process_answer(request, pk, answer):
         ulam_game.game_state=str(process_yes(literal_eval(ulam_game.game_state),literal_eval(ulam_game.question_set)))
     elif answer == "No":
         ulam_game.game_state=str(process_no(literal_eval(ulam_game.game_state),literal_eval(ulam_game.question_set)))
+    ulam_game.sigma_game_state=str(set_sigma(literal_eval(ulam_game.game_state)))
+    print(ulam_game.game_state)
     ulam_game.save()
     return redirect('/questionasking/answer')
 

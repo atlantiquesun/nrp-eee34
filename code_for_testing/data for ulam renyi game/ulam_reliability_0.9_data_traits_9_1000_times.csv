@@ -127,5 +127,3 @@ trait number,breed number,expected number of questions asked,expected numbers of
 9,498,17,2,18.507,755,245,0.755
 ,,,,,,,
 9,506,17,2,18.492,730,270,0.73
-,,,,,,,
-trait number,breed number,expected numbers of errors,average number of questions asked,successful answer,unsuccessful answer,success rate,
