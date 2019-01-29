@@ -45,7 +45,6 @@ def process_answer(request, pk, answer):
     elif answer == "No":
         ulam_game.game_state=str(process_no(literal_eval(ulam_game.game_state),literal_eval(ulam_game.question_set)))
     ulam_game.sigma_game_state=str(set_sigma(literal_eval(ulam_game.game_state)))
-    print(ulam_game.game_state)
     ulam_game.save()
     return redirect('/questionasking/answer')
 

@@ -26,7 +26,7 @@ print(naive)
 #plt.ylim(0,1)
 #plt.plot([0,512], [9,9], color='r', linestyle='-', linewidth=2, label='DCFECC')
 ax2= ax1.twinx()
-ax2.plot(list(range(512)),list(map(piecewise,range(0,512))),label='e',color='g',linestyle=':')
+ax2.plot(list(range(512)),list(map(piecewise,range(0,512))),label='e',color='g')
 ax2.set_ylabel('e', color='g')
 ax2.tick_params(axis='y', colors='g')
 
